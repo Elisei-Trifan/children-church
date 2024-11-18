@@ -1,7 +1,11 @@
+import ChildrenItem from './components/ChildrenItem'
+
+import './style/App.css'
+
 function App() {
   return (
     <div className="App">
-      <h1>sascaed</h1>
+      <ChildrenItem />
     </div>
   )
 }
