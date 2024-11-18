@@ -3,7 +3,7 @@ import { children } from '../data/children'
 
 const ChildrenItem = () => {
   return (
-    <div>
+    <>
       {children.map((item) => (
         <div key={item.id} className="item">
           <h3> {item.id} </h3>
@@ -14,7 +14,7 @@ const ChildrenItem = () => {
           <p> {item.dateOfBirth} </p>
         </div>
       ))}
-    </div>
+    </>
   )
 }
 

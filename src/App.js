@@ -1,12 +1,16 @@
 import ChildrenItem from './components/ChildrenItem'
+import Navbar from './components/Navbar'
 
 import './style/App.css'
 
 function App() {
   return (
-    <div className="App">
-      <ChildrenItem />
-    </div>
+    <>
+      <Navbar />
+      <div className="App">
+        <ChildrenItem />
+      </div>
+    </>
   )
 }
 
