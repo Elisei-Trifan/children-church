@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 700px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid teal;
+  margin-top: 15px;
+  padding: 5px 15px;
+}
+
+.post_btns {
+  display: flex;
+}
+
+.post-enter {
+  transform: translateX(-850px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-850px);
+  transition: all 500ms ease-in;
+}
+
+.page_wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid teal;
+  border-radius: 5px;
+  margin-bottom: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.page:hover {
+  border: 2px solid rgb(178, 20, 20);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.page_clicked {
+  background: rgba(15, 105, 105, 0.5);
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: rgb(195, 203, 211, 0.4);
+}
+
+.navbar_links {
+  margin-left: auto;
+}
+
+.link {
+  margin-left: 20px;
+}
