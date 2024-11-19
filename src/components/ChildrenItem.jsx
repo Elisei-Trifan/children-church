@@ -1,7 +1,7 @@
 import React from 'react'
-import { children } from '../data/children'
+// import { children } from '../data/children'
 
-const ChildrenItem = () => {
+const ChildrenItem = ({ children }) => {
   return (
     <>
       {children.map((item, index) => (

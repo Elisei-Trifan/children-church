@@ -37,6 +37,7 @@ export const children = [
   {
     id: 6,
     surname: 'Диденко Сергей',
+    lastname: 'Диденко',
     name: 'Мелита',
     dateOfBirth: '11.10.2013',
   },
@@ -73,6 +74,7 @@ export const children = [
   {
     id: 12,
     surname: 'Крутой Станислав',
+    lastname: 'Крутой',
     name: 'Яков',
     dateOfBirth: '14.08.2015',
   },
