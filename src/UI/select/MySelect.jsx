@@ -16,5 +16,3 @@ const MySelect = ({ options, defaultValue, value, onChange }) => {
 }
 
 export default MySelect
-
-//value={value} onChange={(event) => onChange(event.target.value)}

@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
-// import { children } from '../data/children'
+import getFullYear from '../utils/getFullYear'
 
 const ChildrenItem = ({ children }) => {
   return (
@@ -8,8 +9,11 @@ const ChildrenItem = ({ children }) => {
         <div key={item.id} className="item">
           <h3> {index + 1} </h3>
 
-          <p style={{ paddingRight: '15px' }}>
+          <p style={{ width: '200px' }}>
             {item.lastname} {item.name}
+          </p>
+          <p style={{ marginRight: '80px' }}>
+            {getFullYear(item.dateOfBirth)}{' '}
           </p>
           <p style={{ paddingRight: '20px' }}> {item.dateOfBirth} </p>
         </div>
