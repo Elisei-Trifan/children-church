@@ -4,14 +4,14 @@ import { children } from '../data/children'
 const ChildrenItem = () => {
   return (
     <>
-      {children.map((item) => (
+      {children.map((item, index) => (
         <div key={item.id} className="item">
-          <h3> {item.id} </h3>
+          <h3> {index + 1} </h3>
 
-          <p>
-            {item.lastname} {item.name}{' '}
+          <p style={{ paddingRight: '15px' }}>
+            {item.lastname} {item.name}
           </p>
-          <p> {item.dateOfBirth} </p>
+          <p style={{ paddingRight: '20px' }}> {item.dateOfBirth} </p>
         </div>
       ))}
     </>
