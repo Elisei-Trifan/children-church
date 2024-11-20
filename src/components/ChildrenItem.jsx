@@ -7,15 +7,15 @@ const ChildrenItem = ({ children }) => {
     <>
       {children.map((item, index) => (
         <div key={item.id} className="item">
-          <h3> {index + 1} </h3>
+          <h3 style={{ paddingRight: '2vw' }}> {index + 1} </h3>
 
           <p style={{ width: '200px' }}>
             {item.lastname} {item.name}
           </p>
-          <p style={{ marginRight: '80px' }}>
+          <p style={{ paddingRight: '14vw' }}>
             {getFullYear(item.dateOfBirth)}{' '}
           </p>
-          <p style={{ paddingRight: '20px' }}> {item.dateOfBirth} </p>
+          <p> {item.dateOfBirth} </p>
         </div>
       ))}
     </>

@@ -10,6 +10,7 @@ import ChildFilter from './components/ChildFilter'
 
 function App() {
   const [children, setChildren] = useState(child)
+
   const [selectedSort, setSelectedSort] = useState('')
   const [selectedGroup, setSelectedGroup] = useState('')
 
@@ -38,12 +39,10 @@ function App() {
     setSelectedGroup(group)
 
     if (group === '0-6') {
-      setChildren(child)
       setChildren(
         [...children].filter((item) => getFullYear(item.dateOfBirth) < 6)
       )
     } else if (group === '6-8') {
-      setChildren(child)
       setChildren(
         [...children].filter(
           (item) =>
@@ -52,7 +51,6 @@ function App() {
         )
       )
     } else if (group === '8-10') {
-      setChildren(child)
       setChildren(
         [...children].filter(
           (item) =>
@@ -61,7 +59,6 @@ function App() {
         )
       )
     } else if (group === '10-12') {
-      setChildren(child)
       setChildren(
         [...children].filter(
           (item) =>
@@ -70,7 +67,6 @@ function App() {
         )
       )
     } else if (group === '12-14') {
-      setChildren(child)
       setChildren(
         [...children].filter(
           (item) =>
@@ -78,8 +74,7 @@ function App() {
             getFullYear(item.dateOfBirth) >= 12
         )
       )
-    } else if (group === '14-16 ') {
-      setChildren(child)
+    } else if (group === '14-16') {
       setChildren(
         [...children].filter(
           (item) =>
@@ -87,20 +82,22 @@ function App() {
             getFullYear(item.dateOfBirth) >= 14
         )
       )
+    } else if (group === 'reset') {
+      setChildren(child)
     }
   }
 
   return (
     <>
       <Navbar />
+      <ChildFilter
+        sortChildren={sortChildren}
+        selectedSort={selectedSort}
+        sortGroup={sortGroup}
+        selectedGroup={selectedGroup}
+      />
       <TableName />
       <div className="App">
-        <ChildFilter
-          sortChildren={sortChildren}
-          selectedSort={selectedSort}
-          sortGroup={sortGroup}
-          selectedGroup={selectedGroup}
-        />
         <ChildrenItem children={children} />
       </div>
     </>

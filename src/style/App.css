@@ -17,9 +17,10 @@ body {
 
 .navbar {
   position: fixed;
+  left: 0;
   top: 0;
   height: 3rem;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,22 +29,33 @@ body {
   z-index: 1000;
 }
 
+.childFilter {
+  position: fixed;
+  top: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  background: white;
+}
+
 .App {
-  margin-top: 6rem;
+  margin-top: 9rem;
   width: 80vw;
 }
 
 .table_name {
   position: fixed;
-  top: 3rem;
+  top: 6rem;
   height: 3rem;
   width: 80vw;
-  padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid red;
   z-index: 1000;
+  font-size: 14px;
   background: white;
 }
 
@@ -59,7 +71,6 @@ body {
 .select {
   outline: none;
   font-size: 14px;
-
   border-radius: 5px;
 }
 .select:hover {
@@ -71,10 +82,26 @@ body {
   font-size: 14px;
 }
 
-.childFilter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 520px) {
+  * {
+    font-size: 12px;
+  }
+  .childFilter {
+    padding-top: 0.5rem;
+    height: 3.5rem;
+  }
+  .table_name {
+    top: 6.5rem;
+  }
+  .childFilter div h2 {
+    font-size: 12px;
+  }
+  .option {
+    font-size: 12px;
+  }
+  .select {
+    font-size: 11px;
+  }
 }
 
 /* .post_btns {

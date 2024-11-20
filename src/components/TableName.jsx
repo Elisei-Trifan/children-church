@@ -4,12 +4,12 @@ const TableName = () => {
   return (
     <>
       <div className="table_name">
-        <h3 style={{ paddingLeft: '10px' }}> № </h3>
+        <h5 style={{ paddingLeft: '10px' }}> № </h5>
 
-        <h3 style={{ paddingRight: '90px' }}>Фамилия, Имя</h3>
-        <h3 style={{ paddingRight: '60px' }}>Возраст</h3>
+        <h5 style={{ paddingRight: '5vw' }}>Фамилия, Имя</h5>
+        <h5 style={{ paddingRight: '5vw' }}>Возраст</h5>
 
-        <h3> Дата рождения </h3>
+        <h5> Дата рождения </h5>
       </div>
     </>
   )
