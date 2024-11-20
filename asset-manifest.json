@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/children-church/static/css/main.2bac50dc.css",
+    "main.css": "/children-church/static/css/main.623c761e.css",
     "main.js": "/children-church/static/js/main.cbca03e6.js",
     "index.html": "/children-church/index.html",
-    "main.2bac50dc.css.map": "/children-church/static/css/main.2bac50dc.css.map",
+    "main.623c761e.css.map": "/children-church/static/css/main.623c761e.css.map",
     "main.cbca03e6.js.map": "/children-church/static/js/main.cbca03e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bac50dc.css",
+    "static/css/main.623c761e.css",
     "static/js/main.cbca03e6.js"
   ]
 }
