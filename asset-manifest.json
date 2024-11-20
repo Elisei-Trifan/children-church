@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/children-church/static/css/main.8abe40b0.css",
+    "main.js": "/children-church/static/js/main.a538db91.js",
+    "index.html": "/children-church/index.html",
+    "main.8abe40b0.css.map": "/children-church/static/css/main.8abe40b0.css.map",
+    "main.a538db91.js.map": "/children-church/static/js/main.a538db91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8abe40b0.css",
+    "static/js/main.a538db91.js"
+  ]
+}
