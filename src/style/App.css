@@ -56,6 +56,27 @@ body {
   background: #cbc5c5;
 }
 
+.select {
+  outline: none;
+  font-size: 14px;
+
+  border-radius: 5px;
+}
+.select:hover {
+  cursor: pointer;
+  background: rgba(125, 125, 145, 0.5);
+}
+
+.option {
+  font-size: 14px;
+}
+
+.childFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* .post_btns {
   display: flex;
 }
