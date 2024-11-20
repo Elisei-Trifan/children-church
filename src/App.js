@@ -10,9 +10,15 @@ import ChildFilter from './components/ChildFilter'
 
 function App() {
   const [children, setChildren] = useState(child)
-
+  const [childrenGroup, setChildrenGroup] = useState(child)
   const [selectedSort, setSelectedSort] = useState('')
   const [selectedGroup, setSelectedGroup] = useState('')
+
+  function reset() {
+    setChildren(child)
+    setSelectedSort('')
+    setSelectedGroup('')
+  }
 
   function sortChildren(sort) {
     setSelectedSort(sort)
@@ -40,11 +46,11 @@ function App() {
 
     if (group === '0-6') {
       setChildren(
-        [...children].filter((item) => getFullYear(item.dateOfBirth) < 6)
+        [...childrenGroup].filter((item) => getFullYear(item.dateOfBirth) < 6)
       )
     } else if (group === '6-8') {
       setChildren(
-        [...children].filter(
+        [...childrenGroup].filter(
           (item) =>
             getFullYear(item.dateOfBirth) < 8 &&
             getFullYear(item.dateOfBirth) >= 6
@@ -52,7 +58,7 @@ function App() {
       )
     } else if (group === '8-10') {
       setChildren(
-        [...children].filter(
+        [...childrenGroup].filter(
           (item) =>
             getFullYear(item.dateOfBirth) < 10 &&
             getFullYear(item.dateOfBirth) >= 8
@@ -60,7 +66,7 @@ function App() {
       )
     } else if (group === '10-12') {
       setChildren(
-        [...children].filter(
+        [...childrenGroup].filter(
           (item) =>
             getFullYear(item.dateOfBirth) < 12 &&
             getFullYear(item.dateOfBirth) >= 10
@@ -68,7 +74,7 @@ function App() {
       )
     } else if (group === '12-14') {
       setChildren(
-        [...children].filter(
+        [...childrenGroup].filter(
           (item) =>
             getFullYear(item.dateOfBirth) < 14 &&
             getFullYear(item.dateOfBirth) >= 12
@@ -76,7 +82,7 @@ function App() {
       )
     } else if (group === '14-16') {
       setChildren(
-        [...children].filter(
+        [...childrenGroup].filter(
           (item) =>
             getFullYear(item.dateOfBirth) < 16 &&
             getFullYear(item.dateOfBirth) >= 14
@@ -89,7 +95,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar onClick={reset} />
       <ChildFilter
         sortChildren={sortChildren}
         selectedSort={selectedSort}

@@ -29,6 +29,21 @@ body {
   z-index: 1000;
 }
 
+.navbar_button {
+  width: 90px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+  outline: none;
+  /* border: 1px solid red; */
+  border: none;
+  cursor: pointer;
+}
+.navbar_button:hover {
+  background: rgb(155, 155, 223);
+  transition: 0.4s ease-in-out;
+}
+
 .childFilter {
   position: fixed;
   top: 3rem;
@@ -43,7 +58,7 @@ body {
 }
 
 .App {
-  margin-top: 9rem;
+  margin-top: 8.5rem;
   width: 80vw;
 }
 
@@ -70,6 +85,18 @@ body {
   background: #cbc5c5;
 }
 
+.item_h3 {
+  padding-right: 8vw;
+  width: 10px;
+}
+
+.item_age {
+  padding-right: 14vw;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .select {
   outline: none;
   font-size: 14px;
@@ -87,6 +114,13 @@ body {
 @media (max-width: 520px) {
   * {
     font-size: 12px;
+  }
+
+  .navbar_button {
+    width: 60px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
   }
   .childFilter {
     padding-top: 0.5rem;

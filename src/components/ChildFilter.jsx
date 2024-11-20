@@ -14,7 +14,7 @@ const ChildFilter = ({
         <MySelect
           value={selectedSort}
           onChange={sortChildren}
-          defaultValue="Сортировка"
+          defaultValue=""
           options={[
             {
               value: 'lastname',
@@ -40,7 +40,7 @@ const ChildFilter = ({
         <MySelect
           value={selectedGroup}
           onChange={sortGroup}
-          defaultValue="Группы"
+          defaultValue=""
           options={[
             {
               value: '0-6',

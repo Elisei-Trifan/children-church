@@ -1,13 +1,15 @@
+import { children } from '../data/children'
+
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ onClick }) => {
   return (
     <>
       <div className="navbar">
-        <p> № </p>
-
-        <p>Фамилия</p>
-        <p>Имя</p>
+        <p> Всего детей: {children.length} </p>
+        <button className="navbar_button" onClick={onClick}>
+          Обновить
+        </button>
       </div>
     </>
   )
