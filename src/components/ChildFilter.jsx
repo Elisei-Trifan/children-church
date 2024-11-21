@@ -9,7 +9,7 @@ const ChildFilter = ({
 }) => {
   return (
     <div className="childFilter">
-      <div>
+      <div className="childFilter_item">
         <h2> Сортировка</h2>
         <MySelect
           value={selectedSort}
@@ -35,7 +35,7 @@ const ChildFilter = ({
           ]}
         ></MySelect>
       </div>
-      <div>
+      <div className="childFilter_item">
         <h2> Группы</h2>
         <MySelect
           value={selectedGroup}

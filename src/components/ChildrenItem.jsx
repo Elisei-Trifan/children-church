@@ -13,7 +13,7 @@ const ChildrenItem = ({ children }) => {
             {item.lastname} {item.name}
           </p>
           <p className="item_age">{calculateAgeInYears(item.dateOfBirth)} </p>
-          <p> {item.dateOfBirth} </p>
+          <p className="item_birth"> {item.dateOfBirth} </p>
         </div>
       ))}
     </>

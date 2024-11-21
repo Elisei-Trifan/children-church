@@ -35,7 +35,6 @@ body {
   margin-right: 20px;
   border-radius: 5px;
   outline: none;
-  /* border: 1px solid red; */
   border: none;
   cursor: pointer;
 }
@@ -57,9 +56,15 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.App {
-  margin-top: 8.8rem;
-  width: 80vw;
+.childFilter_item {
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.childFilter_item h2 {
+  width: 100%;
 }
 
 .table_name {
@@ -76,7 +81,11 @@ body {
 }
 
 .table_name_lastname {
-  padding-left: 2vw;
+  padding-left: 1vw;
+}
+
+.table_name_age {
+  padding-right: 3vw;
 }
 
 .item {
@@ -94,14 +103,31 @@ body {
 }
 
 .item_age {
-  padding-right: 14vw;
+  padding-right: 15vw;
   width: 20px;
   display: flex;
   justify-content: center;
 }
 
+.item_birth {
+  padding-right: 1vw;
+}
+
+.navbar_links {
+  position: fixed;
+  top: 10rem;
+  width: 80vw;
+  background: white;
+  text-align: center;
+}
+
+.App {
+  margin-top: 11rem;
+  width: 80vw;
+}
 .select {
   height: 4vh;
+  width: 25vw;
   outline: none;
   font-size: 14px;
   border-radius: 5px;
@@ -117,10 +143,11 @@ body {
 
 @media (max-width: 520px) {
   * {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .navbar_button {
+    font-size: 12px;
     width: 60px;
     height: 20px;
     margin-right: 20px;
@@ -133,8 +160,11 @@ body {
   .table_name {
     top: 7.5rem;
   }
+  .table_name h5 {
+    font-size: 12px;
+  }
   .table_name_lastname {
-    padding-right: 4vw;
+    padding-right: 8vw;
   }
   .App {
     margin-top: 9.8rem;
@@ -142,9 +172,13 @@ body {
   .item {
     padding: 5px 5px;
   }
-  .item_age {
-    padding-right: 18vw;
+  .item_h3 {
+    padding-right: 6vw;
   }
+  .item_age {
+    padding-right: 15vw;
+  }
+
   .option {
     font-size: 12px;
   }

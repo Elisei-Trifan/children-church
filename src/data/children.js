@@ -216,7 +216,7 @@ const childrenTotal = [
     surname: 'Ткаченко Валентин',
     lastname: 'Ткаченко',
     name: 'Кармелина',
-    dateOfBirth: '24.01.2000',
+    dateOfBirth: '24.01.2018',
   },
 ]
 
