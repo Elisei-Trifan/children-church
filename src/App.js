@@ -3,7 +3,7 @@ import ChildrenItem from './components/ChildrenItem'
 import Navbar from './components/Navbar'
 import TableName from './components/TableName'
 import { children as child } from './data/children'
-import getFullYear from './utils/getFullYear'
+import { calculateAgeInDays, calculateAgeInYears } from './utils/getFullYear'
 import './style/App.css'
 import { useState } from 'react'
 import ChildFilter from './components/ChildFilter'
@@ -27,13 +27,17 @@ function App() {
     } else if (sort === 'dateOfBirth') {
       setChildren(
         [...children].sort((a, b) =>
-          getFullYear(a.dateOfBirth) > getFullYear(b.dateOfBirth) ? 1 : -1
+          calculateAgeInDays(a.dateOfBirth) > calculateAgeInDays(b.dateOfBirth)
+            ? 1
+            : -1
         )
       )
     } else if (sort === 'dateOfBirth2') {
       setChildren(
         [...children].sort((a, b) =>
-          getFullYear(a.dateOfBirth) < getFullYear(b.dateOfBirth) ? 1 : -1
+          calculateAgeInDays(a.dateOfBirth) < calculateAgeInDays(b.dateOfBirth)
+            ? 1
+            : -1
         )
       )
     } else if (sort === 'reset') {
@@ -46,46 +50,50 @@ function App() {
 
     if (group === '0-6') {
       setChildren(
-        [...childrenGroup].filter((item) => getFullYear(item.dateOfBirth) < 6)
+        [...childrenGroup].filter(
+          (item) =>
+            calculateAgeInYears(item.dateOfBirth) < 6 &&
+            calculateAgeInYears(item.dateOfBirth) >= 2
+        )
       )
     } else if (group === '6-8') {
       setChildren(
         [...childrenGroup].filter(
           (item) =>
-            getFullYear(item.dateOfBirth) < 8 &&
-            getFullYear(item.dateOfBirth) >= 6
+            calculateAgeInYears(item.dateOfBirth) < 8 &&
+            calculateAgeInYears(item.dateOfBirth) >= 6
         )
       )
     } else if (group === '8-10') {
       setChildren(
         [...childrenGroup].filter(
           (item) =>
-            getFullYear(item.dateOfBirth) < 10 &&
-            getFullYear(item.dateOfBirth) >= 8
+            calculateAgeInYears(item.dateOfBirth) < 10 &&
+            calculateAgeInYears(item.dateOfBirth) >= 8
         )
       )
     } else if (group === '10-12') {
       setChildren(
         [...childrenGroup].filter(
           (item) =>
-            getFullYear(item.dateOfBirth) < 12 &&
-            getFullYear(item.dateOfBirth) >= 10
+            calculateAgeInYears(item.dateOfBirth) < 12 &&
+            calculateAgeInYears(item.dateOfBirth) >= 10
         )
       )
     } else if (group === '12-14') {
       setChildren(
         [...childrenGroup].filter(
           (item) =>
-            getFullYear(item.dateOfBirth) < 14 &&
-            getFullYear(item.dateOfBirth) >= 12
+            calculateAgeInYears(item.dateOfBirth) < 14 &&
+            calculateAgeInYears(item.dateOfBirth) >= 12
         )
       )
     } else if (group === '14-16') {
       setChildren(
         [...childrenGroup].filter(
           (item) =>
-            getFullYear(item.dateOfBirth) < 16 &&
-            getFullYear(item.dateOfBirth) >= 14
+            calculateAgeInYears(item.dateOfBirth) < 16 &&
+            calculateAgeInYears(item.dateOfBirth) >= 14
         )
       )
     } else if (group === 'reset') {

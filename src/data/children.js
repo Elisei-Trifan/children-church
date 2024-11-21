@@ -1,4 +1,6 @@
-export const children = [
+import { calculateAgeInYears } from '../utils/getFullYear'
+
+const childrenTotal = [
   {
     id: 1,
     surname: 'Фомин Вадим',
@@ -189,21 +191,21 @@ export const children = [
     dateOfBirth: '21.06.2024',
   },
   {
-    id: 28,
+    id: 34,
     surname: 'Трифан Тимофей',
     lastname: 'Трифан',
     name: 'Ева',
     dateOfBirth: '26.11.2020',
   },
   {
-    id: 29,
+    id: 33,
     surname: 'Трифан Тимофей',
     lastname: 'Трифан',
     name: 'Вита',
     dateOfBirth: '30.05.2022',
   },
   {
-    id: 30,
+    id: 32,
     surname: 'Трифан Тимофей',
     lastname: 'Трифан',
     name: 'Мира',
@@ -214,6 +216,12 @@ export const children = [
     surname: 'Ткаченко Валентин',
     lastname: 'Ткаченко',
     name: 'Кармелина',
-    dateOfBirth: '24.01.2018',
+    dateOfBirth: '24.01.2000',
   },
 ]
+
+function filterByAgeUnder16(objects) {
+  return objects.filter((obj) => calculateAgeInYears(obj.dateOfBirth) <= 16)
+}
+
+export const children = filterByAgeUnder16(childrenTotal)

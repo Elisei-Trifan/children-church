@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import getFullYear from '../utils/getFullYear'
+import { calculateAgeInYears } from '../utils/getFullYear'
 
 const ChildrenItem = ({ children }) => {
   return (
@@ -12,7 +12,7 @@ const ChildrenItem = ({ children }) => {
           <p style={{ width: '200px' }}>
             {item.lastname} {item.name}
           </p>
-          <p className="item_age">{getFullYear(item.dateOfBirth)} </p>
+          <p className="item_age">{calculateAgeInYears(item.dateOfBirth)} </p>
           <p> {item.dateOfBirth} </p>
         </div>
       ))}
