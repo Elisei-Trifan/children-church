@@ -1,4 +1,4 @@
-.header {
+.stat_header {
   height: 3rem;
   width: 100vw;
   background: rgb(195, 203, 211);
@@ -7,9 +7,15 @@
   justify-content: space-between;
   padding: 0 2rem;
 }
-.table_name_fam {
+
+.stat_links {
   display: flex;
-  flex: 1;
+  justify-content: space-between;
+  width: 20vw;
+}
+
+.stat {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80vw;
@@ -17,43 +23,32 @@
   background: white;
   border-bottom: 1px solid red;
 }
-.table_name_fam > h5:nth-child(n) {
-  width: 160px;
-}
 
-.table_name_fam_num {
-  padding-left: 1vw;
-}
-
-.table_name_child {
-  padding-right: 1vw;
-}
-
-.family {
+.stat_table {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #cbc5c5;
   margin-top: 15px;
   padding: 5px 15px;
+  width: 80vw;
 }
-.family_name {
-  padding-right: 10vw;
+.stat_table_year {
+  padding-right: 13vw;
 }
-
-.family_qunt {
-  padding-right: 2vw;
+.stat_table_quant {
+  width: 20px;
 }
 
 @media (max-width: 520px) {
-  .table_name_fam > h5:nth-child(n) {
+  .stat_header > p,
+  div > a {
     font-size: 12px;
+  }
+  .stat_header > div {
+    font-size: 12px;
+  }
+  .stat_links {
     width: 25vw;
-  }
-  .family > p:nth-child(n) {
-    font-size: 14px;
-  }
-  .table_name_child {
-    text-align: right;
   }
 }

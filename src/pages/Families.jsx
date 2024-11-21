@@ -8,6 +8,9 @@ const Families = () => {
       <div className={cl.header}>
         <p className={cl.header_families}> Всего семей: {families.length} </p>
         <Link to="/home">Главная</Link>
+        <Link className="statistic" to="/statistic">
+          Статистика
+        </Link>
       </div>
       <div>
         <div className={cl.table_name_fam}>
@@ -19,7 +22,7 @@ const Families = () => {
           <div key={item.surname} className={cl.family}>
             <p>{index + 1}.</p>
             <p className={cl.family_name}>{item.surname}</p>
-            <p> {item.childQunt}</p>
+            <p className={cl.family_qunt}> {item.childQunt}</p>
           </div>
         ))}
       </div>

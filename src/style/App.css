@@ -5,7 +5,16 @@
   font-size: 18px;
 }
 
-body {
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 #root {
@@ -100,6 +109,7 @@ body {
   margin-top: 15px;
   padding: 5px 15px;
   background: #cbc5c5;
+  font-size: 12px;
 }
 
 .item_h3 {
@@ -134,16 +144,29 @@ body {
   font-size: 14px;
 }
 
+.links {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (max-width: 520px) {
   * {
     font-size: 14px;
+  }
+  .navbar {
+    padding: 0 10px;
+  }
+  .links {
+    flex-direction: column;
   }
 
   .navbar_button {
     font-size: 12px;
     width: 60px;
     height: 20px;
-    margin-right: 20px;
+    margin-right: 0;
     border-radius: 3px;
   }
   .childFilter {
