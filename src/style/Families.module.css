@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: 3rem;
+  width: 100vw;
+  background: rgb(195, 203, 211);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.table_name_fam {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 3rem;
+  background: white;
+  border-bottom: 1px solid red;
+}
+.table_name_fam > h5:nth-child(n) {
+  width: 160px;
+}
+
+.table_name_fam_num {
+  padding-left: 1vw;
+}
+
+.table_name_child {
+  padding-right: 1vw;
+}
+
+.family {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #cbc5c5;
+  margin-top: 15px;
+  padding: 5px 15px;
+}
+.family_name {
+  padding-right: 10vw;
+}
+
+@media (max-width: 520px) {
+  .table_name_fam > h5:nth-child(n) {
+    font-size: 12px;
+    width: 25vw;
+  }
+  .family > p:nth-child(n) {
+    font-size: 14px;
+  }
+}

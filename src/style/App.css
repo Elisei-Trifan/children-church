@@ -6,7 +6,6 @@
 }
 
 body {
-  min-height: 400vh;
 }
 
 #root {
@@ -67,6 +66,12 @@ body {
   width: 100%;
 }
 
+.App {
+  margin-top: 8.8rem;
+  width: 80vw;
+  min-height: 400vh;
+}
+
 .table_name {
   position: fixed;
   top: 6.5rem;
@@ -113,18 +118,6 @@ body {
   padding-right: 1vw;
 }
 
-.navbar_links {
-  position: fixed;
-  top: 10rem;
-  width: 80vw;
-  background: white;
-  text-align: center;
-}
-
-.App {
-  margin-top: 11rem;
-  width: 80vw;
-}
 .select {
   height: 4vh;
   width: 25vw;

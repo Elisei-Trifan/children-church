@@ -220,8 +220,36 @@ const childrenTotal = [
   },
 ]
 
-function filterByAgeUnder16(objects) {
-  return objects.filter((obj) => calculateAgeInYears(obj.dateOfBirth) <= 16)
+function filterByAgeUnder16(array) {
+  return array.filter((obj) => calculateAgeInYears(obj.dateOfBirth) <= 16)
 }
 
 export const children = filterByAgeUnder16(childrenTotal)
+
+// function filterFamilies(objects) {
+//   return objects
+//     .map((obj) => obj.surname) // Извлекаем поле surname
+//     .filter((surname, index, self) => self.indexOf(surname) === index) // Убираем дубликаты
+//     .map((surname) => ({ surname })) // Возвращаем массив объектов с только полем surname
+// }
+
+function filterFamilies(objects) {
+  const surnameCount = {} // Для подсчета количества одинаковых фамилий
+
+  // Подсчитываем количество одинаковых фамилий
+  objects.forEach((obj) => {
+    surnameCount[obj.surname] = (surnameCount[obj.surname] || 0) + 1
+  })
+
+  // Создаем новый массив объектов, который будет содержать только уникальные фамилии с полем childQunt
+  const uniqueSurnames = Object.keys(surnameCount).map((surname) => {
+    return {
+      surname: surname,
+      childQunt: surnameCount[surname], // Количество одинаковых фамилий
+    }
+  })
+
+  return uniqueSurnames
+}
+
+export const families = filterFamilies(childrenTotal)

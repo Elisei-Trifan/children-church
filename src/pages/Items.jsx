@@ -110,7 +110,12 @@ function Items() {
         sortGroup={sortGroup}
         selectedGroup={selectedGroup}
       />
-      <TableName />
+      <TableName
+        num="№"
+        lastname="Фамилия, Имя"
+        age="Возраст"
+        birth="Дата рождения"
+      />
       <div className="App">
         <ChildrenItem children={children} />
       </div>

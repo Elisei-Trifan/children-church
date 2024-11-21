@@ -7,7 +7,7 @@ const ChildrenItem = ({ children }) => {
     <>
       {children.map((item, index) => (
         <div key={item.id} className="item">
-          <h3 className="item_h3">{index + 1}</h3>
+          <p className="item_h3">{index + 1}.</p>
 
           <p style={{ width: '200px' }}>
             {item.lastname} {item.name}
