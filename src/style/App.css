@@ -79,6 +79,9 @@ a:hover {
   width: 80vw;
   min-height: 400vh;
 }
+.App > :last-child {
+  margin-bottom: 20px;
+}
 
 .table_name {
   position: fixed;

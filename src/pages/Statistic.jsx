@@ -27,7 +27,7 @@ const Statistic = () => {
       <div className={cl.stat_table}>
         <p className={cl.stat_table_num}>2.</p>
         <p className={cl.stat_table_year}>2024</p>
-        <p className={cl.stat_table_quant}>97 </p>
+        <p className={cl.stat_table_quant}>95 </p>
       </div>
     </>
   )

@@ -106,8 +106,8 @@ function Items() {
       setChildren(
         [...childrenGroup].filter(
           (item) =>
-            calculateAgeInYears(item.dateOfBirth) < 16 &&
-            calculateAgeInYears(item.dateOfBirth) >= 14
+            calculateAgeInYears(item?.dateOfBirth) < 16 &&
+            calculateAgeInYears(item?.dateOfBirth) >= 14
         )
       )
     } else if (group === 'reset') {
