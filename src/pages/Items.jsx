@@ -20,10 +20,24 @@ function Items() {
     setSelectedGroup('')
   }
 
+  //   function sortChildren(sort) {
+  //     setSelectedSort(sort)
+  //     if (sort === 'lastname') {
+  //       setChildren([...children].sort((a, b) => a[sort].localeCompare(b[sort])))
+  //     }
+
   function sortChildren(sort) {
     setSelectedSort(sort)
     if (sort === 'lastname') {
-      setChildren([...children].sort((a, b) => a[sort].localeCompare(b[sort])))
+      setChildren(
+        [...children].sort((a, b) => {
+          const primary = a[sort].localeCompare(b[sort])
+          if (primary === 0) {
+            return a.name.localeCompare(b.name)
+          }
+          return primary
+        })
+      )
     } else if (sort === 'dateOfBirth') {
       setChildren(
         [...children].sort((a, b) =>

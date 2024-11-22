@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: blue;
+  color: rgb(141, 141, 222);
   font-weight: bold;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
