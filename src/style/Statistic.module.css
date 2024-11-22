@@ -48,6 +48,9 @@
   .stat_header > div {
     font-size: 12px;
   }
+  .stat_year {
+    padding-left: 10vw;
+  }
   .stat_links {
     width: 25vw;
   }

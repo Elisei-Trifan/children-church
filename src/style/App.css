@@ -112,6 +112,16 @@ a:hover {
   font-size: 12px;
 }
 
+.item_red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 5px 15px;
+  background: #f18686;
+  font-size: 12px;
+}
+
 .item_h3 {
   padding-right: 8vw;
   width: 10px;

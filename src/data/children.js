@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { calculateAgeInYears } from '../utils/getFullYear'
 
-const childrenTotal = [
+export const children = [
   {
     id: 1,
     surname: 'Фомин Вадим',
@@ -220,7 +221,7 @@ const childrenTotal = [
     surname: 'Ткаченко Валентин',
     lastname: 'Ткаченко',
     name: 'Самуил',
-    dateOfBirth: '2.07.2021',
+    dateOfBirth: '02.07.2021',
   },
   {
     id: 31,
@@ -274,9 +275,9 @@ const childrenTotal = [
   {
     id: 31,
     surname: 'Кривошеев Виталий',
-    lastname: 'Кривошеев',
+    lastname: 'Кривошеева',
     name: 'Наталья',
-    dateOfBirth: '18.02.2023',
+    dateOfBirth: '18.02.2000',
   },
 ]
 
@@ -284,14 +285,7 @@ function filterByAgeUnder16(array) {
   return array.filter((obj) => calculateAgeInYears(obj.dateOfBirth) <= 16)
 }
 
-export const children = filterByAgeUnder16(childrenTotal)
-
-// function filterFamilies(objects) {
-//   return objects
-//     .map((obj) => obj.surname) // Извлекаем поле surname
-//     .filter((surname, index, self) => self.indexOf(surname) === index) // Убираем дубликаты
-//     .map((surname) => ({ surname })) // Возвращаем массив объектов с только полем surname
-// }
+// export const children = filterByAgeUnder16(childrenTotal)
 
 function filterFamilies(objects) {
   const surnameCount = {} // Для подсчета количества одинаковых фамилий
@@ -312,4 +306,4 @@ function filterFamilies(objects) {
   return uniqueSurnames
 }
 
-export const families = filterFamilies(childrenTotal)
+export const families = filterFamilies(children)
