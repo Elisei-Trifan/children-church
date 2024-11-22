@@ -1,7 +1,7 @@
 .stat_header {
   height: 3rem;
   width: 100vw;
-  background: rgb(195, 203, 211);
+  background: rgb(2, 187, 187);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@
 @media (max-width: 520px) {
   .stat_header > p,
   div > a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .stat_header > div {
     font-size: 12px;
@@ -52,6 +52,9 @@
     padding-left: 10vw;
   }
   .stat_links {
-    width: 25vw;
+    width: 28vw;
+  }
+  .stat_table_year {
+    padding-right: 9vw;
   }
 }

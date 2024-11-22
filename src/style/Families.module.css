@@ -1,15 +1,18 @@
 .header {
+  position: fixed;
+  top: 0;
   height: 3rem;
   width: 100vw;
-  background: rgb(195, 203, 211);
+  background: rgb(2, 187, 187);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
 }
 .table_name_fam {
+  position: fixed;
+  top: 3rem;
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   width: 80vw;
@@ -29,6 +32,12 @@
   padding-right: 1vw;
 }
 
+.family_items {
+  margin-top: 6.5rem;
+  width: 80vw;
+  min-height: 200vh;
+}
+
 .family {
   display: flex;
   justify-content: space-between;
@@ -46,6 +55,14 @@
 }
 
 @media (max-width: 520px) {
+  .header > p,
+  a {
+    font-size: 14px;
+  }
+  .header > a {
+    font-size: 14px;
+  }
+
   .table_name_fam > h5:nth-child(n) {
     font-size: 12px;
     width: 25vw;

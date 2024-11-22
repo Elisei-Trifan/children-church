@@ -8,7 +8,6 @@ const Navbar = ({ onClick }) => {
   return (
     <>
       <div className="navbar">
-        {/* <p> Всего детей: {children.length} </p> */}
         <p>
           {`Всего детей: `}
           {

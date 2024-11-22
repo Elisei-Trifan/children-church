@@ -12,12 +12,12 @@ const Families = () => {
           Статистика
         </Link>
       </div>
-      <div>
-        <div className={cl.table_name_fam}>
-          <h5 className={cl.table_name_fam_num}> №</h5>
-          <h5 className={cl.table_name_family}>Семья</h5>
-          <h5 className={cl.table_name_child}>Количество детей </h5>
-        </div>
+      <div className={cl.table_name_fam}>
+        <h5 className={cl.table_name_fam_num}> №</h5>
+        <h5 className={cl.table_name_family}>Семья</h5>
+        <h5 className={cl.table_name_child}>Количество детей </h5>
+      </div>
+      <div className={cl.family_items}>
         {families.map((item, index) => (
           <div key={item.surname} className={cl.family}>
             <p>{index + 1}.</p>

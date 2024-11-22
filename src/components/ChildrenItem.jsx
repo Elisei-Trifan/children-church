@@ -10,7 +10,7 @@ const ChildrenItem = ({ children }) => {
           <div key={item.dateOfBirth} className="item">
             <p className="item_h3">{index + 1}.</p>
 
-            <p style={{ width: '200px' }}>
+            <p className="item_name">
               {item.lastname} {item.name}
             </p>
             <p className="item_age">{calculateAgeInYears(item.dateOfBirth)} </p>
@@ -20,10 +20,12 @@ const ChildrenItem = ({ children }) => {
           <div key={item.dateOfBirth} className="item_red">
             <p className="item_h3">{index + 1}.</p>
 
-            <p style={{ width: '200px' }}>
+            <p className="item_name">
               {item.lastname} {item.name}
             </p>
-            <p className="item_age">{calculateAgeInYears(item.dateOfBirth)} </p>
+            <p className="item_age">
+              {calculateAgeInYears(item.dateOfBirth)} (молодежь)
+            </p>
             <p className="item_birth"> {item.dateOfBirth} </p>
           </div>
         )
