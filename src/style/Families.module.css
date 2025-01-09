@@ -70,6 +70,9 @@
   .family > p:nth-child(n) {
     font-size: 14px;
   }
+  .family_name {
+    padding-right: 4vw;
+  }
   .table_name_child {
     text-align: right;
   }

@@ -242,17 +242,17 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '18.02.2023',
   },
-  {
-    surname: 'Кривошеевы Юрий, Оксана',
-    lastname: 'Кривошеев',
-    name: 'Андрей',
-    dateOfBirth: '19.05.2008',
-  },
+  // {
+  //   surname: 'Кривошеевы Юрий, Оксана',
+  //   lastname: 'Кривошеев',
+  //   name: 'Андрей',
+  //   dateOfBirth: '19.05.2008',
+  // },
   {
     surname: 'Кривошеевы Юрий, Оксана',
     lastname: 'Кривошеев',
     name: 'Иван',
-    dateOfBirth: '18.03.2010',
+    dateOfBirth: '18.03.2011',
   },
   {
     surname: 'Кривошеевы Юрий, Оксана',
@@ -266,12 +266,12 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '26.08.2018',
   },
-  {
-    surname: 'Галата Александр, Александра',
-    lastname: 'Галата',
-    name: 'Александр',
-    dateOfBirth: '04.08.2008',
-  },
+  // {
+  //   surname: 'Галата Александр, Александра',
+  //   lastname: 'Галата',
+  //   name: 'Александр',
+  //   dateOfBirth: '04.08.2008',
+  // },
   {
     surname: 'Галата Александр, Александра',
     lastname: 'Галата',
@@ -284,12 +284,12 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '24.09.2019',
   },
-  {
-    surname: 'Дубины Юрий, Галина',
-    lastname: 'Дубина',
-    name: 'Александр',
-    dateOfBirth: '25.03.2008',
-  },
+  // {
+  //   surname: 'Дубины Юрий, Галина',
+  //   lastname: 'Дубина',
+  //   name: 'Александр',
+  //   dateOfBirth: '25.03.2008',
+  // },
   {
     surname: 'Дубины Юрий, Галина',
     lastname: 'Дубина',
