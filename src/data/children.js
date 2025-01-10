@@ -242,12 +242,12 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '18.02.2023',
   },
-  // {
-  //   surname: 'Кривошеевы Юрий, Оксана',
-  //   lastname: 'Кривошеев',
-  //   name: 'Андрей',
-  //   dateOfBirth: '19.05.2008',
-  // },
+  {
+    surname: 'Кривошеевы Юрий, Оксана',
+    lastname: 'Кривошеев',
+    name: 'Андрей',
+    dateOfBirth: '19.05.2008',
+  },
   {
     surname: 'Кривошеевы Юрий, Оксана',
     lastname: 'Кривошеев',
@@ -266,12 +266,12 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '26.08.2018',
   },
-  // {
-  //   surname: 'Галата Александр, Александра',
-  //   lastname: 'Галата',
-  //   name: 'Александр',
-  //   dateOfBirth: '04.08.2008',
-  // },
+  {
+    surname: 'Галата Александр, Александра',
+    lastname: 'Галата',
+    name: 'Александр',
+    dateOfBirth: '04.08.2008',
+  },
   {
     surname: 'Галата Александр, Александра',
     lastname: 'Галата',
@@ -284,12 +284,12 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '24.09.2019',
   },
-  // {
-  //   surname: 'Дубины Юрий, Галина',
-  //   lastname: 'Дубина',
-  //   name: 'Александр',
-  //   dateOfBirth: '25.03.2008',
-  // },
+  {
+    surname: 'Дубины Юрий, Галина',
+    lastname: 'Дубина',
+    name: 'Александр',
+    dateOfBirth: '25.03.2008',
+  },
   {
     surname: 'Дубины Юрий, Галина',
     lastname: 'Дубина',
@@ -592,18 +592,14 @@ export const children = [
   },
 ]
 
-function filterByAgeUnder16(array) {
-  return array.filter((obj) => calculateAgeInYears(obj.dateOfBirth) <= 16)
-}
-
-// export const children = filterByAgeUnder16(childrenTotal)
-
 function filterFamilies(objects) {
   const surnameCount = {} // Для подсчета количества одинаковых фамилий
 
   // Подсчитываем количество одинаковых фамилий
   objects.forEach((obj) => {
-    surnameCount[obj.surname] = (surnameCount[obj.surname] || 0) + 1
+    if (calculateAgeInYears(obj.dateOfBirth) < 16) {
+      surnameCount[obj.surname] = (surnameCount[obj.surname] || 0) + 1
+    }
   })
 
   // Создаем новый массив объектов, который будет содержать только уникальные фамилии с полем childQunt
