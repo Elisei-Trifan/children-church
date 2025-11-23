@@ -17,7 +17,7 @@ export const children = [
   {
     surname: 'Фомины Вадим, Валентина',
     lastname: 'Фомин',
-    name: 'Иван',
+    name: 'Иванннaasss',
     dateOfBirth: '05.05.2014',
   },
   {
