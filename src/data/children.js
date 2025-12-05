@@ -17,7 +17,7 @@ export const children = [
   {
     surname: 'Фомины Вадим, Валентина',
     lastname: 'Фомин',
-    name: 'Иванннaasss',
+    name: 'Иван',
     dateOfBirth: '05.05.2014',
   },
   {
@@ -82,6 +82,12 @@ export const children = [
   },
   {
     surname: 'Крутые Станислав, Жанна',
+    lastname: 'Крутой',
+    name: 'Марк',
+    dateOfBirth: '05.11.2025',
+  },
+  {
+    surname: 'Крутые Станислав, Жанна',
     lastname: 'Крутая',
     name: 'Римма',
     dateOfBirth: '11.07.2019',
@@ -127,6 +133,12 @@ export const children = [
     lastname: 'Фонарюк',
     name: 'Роман',
     dateOfBirth: '11.12.2022',
+  },
+  {
+    surname: 'Фонарюк Павел, Инна',
+    lastname: 'Фонарюк',
+    name: 'Ангелина',
+    dateOfBirth: '09.09.2025',
   },
   {
     surname: 'Трифан Илья, Мария',
@@ -242,13 +254,7 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '18.02.2023',
   },
-  {
-    surname: 'Кривошеевы Юрий, Оксана',
-    lastname: 'Кривошеев',
-    name: 'Андрей',
-    dateOfBirth: '19.05.2008',
-  },
-  {
+    {
     surname: 'Кривошеевы Юрий, Оксана',
     lastname: 'Кривошеев',
     name: 'Иван',
@@ -266,13 +272,7 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '26.08.2018',
   },
-  {
-    surname: 'Галата Александр, Александра',
-    lastname: 'Галата',
-    name: 'Александр',
-    dateOfBirth: '04.08.2008',
-  },
-  {
+    {
     surname: 'Галата Александр, Александра',
     lastname: 'Галата',
     name: 'Сергей',
@@ -284,19 +284,7 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '24.09.2019',
   },
-  {
-    surname: 'Дубины Юрий, Галина',
-    lastname: 'Дубина',
-    name: 'Александр',
-    dateOfBirth: '25.03.2008',
-  },
-  {
-    surname: 'Дубины Юрий, Галина',
-    lastname: 'Дубина',
-    name: 'Вера',
-    dateOfBirth: '16.02.2009',
-  },
-  {
+     {
     surname: 'Дубины Юрий, Галина',
     lastname: 'Дубина',
     name: 'Андрей',
@@ -377,6 +365,12 @@ export const children = [
   {
     surname: 'Вулпе Вениамин, Ирина',
     lastname: 'Вулпе',
+    name: 'Дмитрий',
+    dateOfBirth: '15.11.2025',
+  },
+  {
+    surname: 'Вулпе Вениамин, Ирина',
+    lastname: 'Вулпе',
     name: 'Кирилл',
     dateOfBirth: '21.03.2014',
   },
@@ -446,13 +440,7 @@ export const children = [
     name: 'Елена',
     dateOfBirth: '31.08.2022',
   },
-  {
-    surname: 'Добровольские Иван, Аня',
-    lastname: 'Добровольская',
-    name: 'Наталья',
-    dateOfBirth: '01.12.2009',
-  },
-  {
+    {
     surname: 'Добровольские Иван, Аня',
     lastname: 'Добровольский',
     name: 'Сергей',
@@ -506,19 +494,7 @@ export const children = [
     name: 'Эрик',
     dateOfBirth: '20.02.2023',
   },
-  {
-    surname: 'Тесленко Павел, Наташа',
-    lastname: 'Тесленко',
-    name: 'Даниил',
-    dateOfBirth: '02.09.2009',
-  },
-  {
-    surname: 'Киселарь Регина',
-    lastname: 'Киселарь',
-    name: 'Марк',
-    dateOfBirth: '09.09.2009',
-  },
-  {
+     {
     surname: 'Киселарь Регина',
     lastname: 'Киселарь',
     name: 'Юрий',
@@ -536,13 +512,7 @@ export const children = [
     name: 'Алексей',
     dateOfBirth: '11.11.2017',
   },
-  {
-    surname: 'Кожухоренко Михаил, Галина',
-    lastname: 'Кожухоренко',
-    name: 'Иван',
-    dateOfBirth: '03.10.2009',
-  },
-  {
+    {
     surname: 'Кожухоренко Михаил, Галина',
     lastname: 'Кожухоренко',
     name: 'Люба',
@@ -554,13 +524,7 @@ export const children = [
     name: 'Павел',
     dateOfBirth: '29.12.2014',
   },
-  {
-    surname: 'Шарковы Анатолий, Мария',
-    lastname: 'Шарков',
-    name: 'Семен',
-    dateOfBirth: '20.08.2009',
-  },
-  {
+    {
     surname: 'Шарковы Анатолий, Мария',
     lastname: 'Шаркова',
     name: 'Анастасия',
@@ -578,17 +542,17 @@ export const children = [
     name: 'Степан',
     dateOfBirth: '23.03.2015',
   },
-  {
-    surname: 'Жильцовы Олег, Люба',
-    lastname: 'Жильцов',
-    name: 'Александр',
-    dateOfBirth: '12.06.2009',
-  },
-  {
+    {
     surname: 'Кривошеевы Павел, Лигия',
     lastname: 'Кривошеева',
     name: 'Яна',
     dateOfBirth: '05.05.2024',
+  },
+  {
+    surname: 'Кривошеевы Павел, Лигия',
+    lastname: 'Кривошеева',
+    name: 'Анна',
+    dateOfBirth: '30.07.2025',
   },
 ]
 
