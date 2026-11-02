@@ -2,12 +2,7 @@
 import { calculateAgeInYears } from '../utils/getFullYear'
 
 export const children = [
-  {
-    surname: 'Фомины Вадим, Валентина',
-    lastname: 'Фомина',
-    name: 'Елена',
-    dateOfBirth: '29.08.2010',
-  },
+
   {
     surname: 'Фомины Вадим, Валентина',
     lastname: 'Фомин',
@@ -284,12 +279,7 @@ export const children = [
     name: 'Наталья',
     dateOfBirth: '24.09.2019',
   },
-     {
-    surname: 'Дубины Юрий, Галина',
-    lastname: 'Дубина',
-    name: 'Андрей',
-    dateOfBirth: '21.08.2010',
-  },
+
   {
     surname: 'Дубины Юрий, Галина',
     lastname: 'Дубина',
@@ -464,13 +454,7 @@ export const children = [
     name: 'Елена',
     dateOfBirth: '07.08.2020',
   },
-  {
-    surname: 'Кривошеевы Иван, Татьяна',
-    lastname: 'Кривошеева',
-    name: 'Елизавета',
-    dateOfBirth: '17.06.2010',
-  },
-  {
+    {
     surname: 'Кривошеевы Иван, Татьяна',
     lastname: 'Кривошеев',
     name: 'Антон',
@@ -553,6 +537,30 @@ export const children = [
     lastname: 'Кривошеева',
     name: 'Анна',
     dateOfBirth: '30.07.2025',
+  },
+  {
+    surname: 'Трифан Тимофей, Авигея',
+    lastname: 'Трифан',
+    name: 'Тимур',
+    dateOfBirth: '09.07.2026',
+  },
+  {
+    surname: 'Галата Вениамин, Инна',
+    lastname: 'Галата',
+    name: 'Давид',
+    dateOfBirth: '08.06.2026',
+  },
+  {
+    surname: 'Кривошеевы Александр, Ольга',
+    lastname: 'Кривошеева',
+    name: 'Дарья',
+    dateOfBirth: '16.12.2025',
+  },
+  {
+    surname: 'Кривошеевы Виталий, Вера',
+    lastname: 'Кривошеев',
+    name: 'Евгений',
+    dateOfBirth: '06.02.2026',
   },
 ]
 

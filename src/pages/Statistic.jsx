@@ -29,6 +29,16 @@ const Statistic = () => {
         <p className={cl.stat_table_year}>2024</p>
         <p className={cl.stat_table_quant}>95 </p>
       </div>
+        <div className={cl.stat_table}>
+            <p className={cl.stat_table_num}>3.</p>
+            <p className={cl.stat_table_year}>2025</p>
+            <p className={cl.stat_table_quant}>92 </p>
+        </div>
+        <div className={cl.stat_table}>
+            <p className={cl.stat_table_num}>4.</p>
+            <p className={cl.stat_table_year}>2026</p>
+            <p className={cl.stat_table_quant}>555 </p>
+        </div>
     </>
   )
 }
